@@ -1,0 +1,50 @@
+* {
+  margin:0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+
+nav {
+  border-left: 6px solid rgba(0,0,0,0.6);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin: 16px 0;
+}
+
+nav ul li a {
+  color:#741f19;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width:0;
+  height: 20px;
+  top: 20px;
+  background:#caff00;
+  z-index: -100;
+  transition: all .7s;
+}
+
+nav ul li a:hover::before {
+  width:75%;
+}
